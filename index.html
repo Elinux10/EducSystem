@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EducSystem</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/masked.js"></script>
+<script src="js/acoes.js"></script>
+</head>
+
+<body class="inicial">
+	<header class="logo">
+    	<h1>EducSystem</h1>
+        <h3>Gerenciador Escolar</h3>
+    </header>
+    
+    <section id="conteudo">
+    	<section id="entrarProfessor">
+   
+            	<h3>ACESSO DO PROFESSOR</h3><br><br>
+        	<form action="#" method="post">
+            	
+            	<input type="text" name="usuario" id="usuario" placeholder="Entre com seu usuario" required="required"/><br><br>
+              
+                <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required="required" /><br><br>
+                
+                <button type="submit" value="Entrar" id="btmProfessor">Entrar</button>
+                
+            </form>
+        </section>
+   		<section id="entrarAluno">
+   			<h3>ACESSO DO ALUNO</h3><br><br>	
+   
+   			<form action="javascript:abrir('boletim.php');" method="post">
+            	
+            <input type="text" name="cpf" id="cpf" placeholder="Entre com seu CPF" required="required"/><br><br>
+                
+            <input type="date" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento" required="required"/><br><br>
+                
+            <button type="submit" id="btmAluno">Consultar Boletim</button>
+                
+            </form>
+		</section>
+    </section>
+</body>
+</html>
